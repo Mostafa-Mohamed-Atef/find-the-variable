@@ -8,8 +8,9 @@ def Calculate():
         output.set('')
         for i in range(-100,100):
             x = i
-            e = eval(splitted_equ[0])
-            if e == int(splitted_equ[1]):
+            l = eval(splitted_equ[0])
+            r = eval(splitted_equ[1])
+            if l == r:
                 print(output.set(x))
                 break
     except:
