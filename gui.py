@@ -7,7 +7,6 @@ def Calculate():
     try:
         l, r = equ.get().strip().split('=')
         output.set('')
-        x = sy.symbols('x') #for assigning the symbol 
         eqx = sy.Eq(sy.sympify(l),sy.sympify(r))
         solved = sy.solve(eqx)
         output.set(solved)
