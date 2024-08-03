@@ -5,12 +5,10 @@ import sympy as sy
 
 def Calculate():
     try:
-        splitted_equ = equ.get().strip().split('=')
+        l, r = equ.get().strip().split('=')
         output.set('')
         x = sy.symbols('x') #for assigning the symbol 
-        l = sy.sympify(splitted_equ[0])
-        r = sy.sympify(splitted_equ[1])
-        eqx = sy.Eq(l,r)
+        eqx = sy.Eq(sy.sympify(l),sy.sympify(r))
         solved = sy.solve(eqx)
         output.set(solved)
     except:
