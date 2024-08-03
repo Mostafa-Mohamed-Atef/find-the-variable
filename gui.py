@@ -1,18 +1,18 @@
 import ttkbootstrap as ttk
 from tkinter import messagebox
+import sympy as sy
 
 
 def Calculate():
     try:
         splitted_equ = equ.get().strip().split('=')
         output.set('')
-        for i in range(-100,100):
-            x = i
-            l = eval(splitted_equ[0])
-            r = eval(splitted_equ[1])
-            if l == r:
-                print(output.set(x))
-                break
+        x = sy.symbols('x') #for assigning the symbol 
+        l = sy.sympify(splitted_equ[0])
+        r = sy.sympify(splitted_equ[1])
+        eqx = sy.Eq(l,r)
+        solved = sy.solve(eqx)
+        output.set(solved)
     except:
         messagebox.showerror('Invalid input', 'Your need to enter an equation!')
 
