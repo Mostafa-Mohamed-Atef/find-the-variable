@@ -1,21 +1,29 @@
-Find The Variable
-This project is a simple python program that solves a problem I always faced in casio calculators, In older calculators which I have it takes so much time to find the unknown variable in your equation this code solve this problem by finding all types of equations in high speed (in the future i will add more complex equations)
+# Find The Variable
 
-Files
-main.py: the main python code you can run it and write your function in terminal 
-gui.py: the same code with more simple user interface 
+This project is a simple Python program that addresses a common problem with older Casio calculators: finding the unknown variable in an equation can be time-consuming. This code solves that problem by rapidly finding the unknown variable in various types of equations. Future updates will include support for more complex equations.
 
-Features
- -finds variable in any equation 
- -you can write any symbol you want ex: x, y, f, z
- -solves quadratic equations and gives both values 
- 
-Technologies Used
- -sympy: excellent module for solving complex math questions 
- -tkinter & ttkbootstrap: for user interface
+## Files
 
-To-Do for next level in the future:
-  - when there are two values only one appears (SOLVED)
-  - float values (SOLVED)
-  - solving two unknown variables 
-  - adding numpy for matrices and complex expressions
+- **main.py**: The main Python code. Run this file and write your function in the terminal.
+- **gui.py**: The same code but with a simpler user interface.
+
+## Features
+
+- Finds variables in any equation.
+- Allows you to use any symbol for variables (e.g., x, y, f, z).
+- Solves quadratic equations and provides both values.
+
+## Technologies Used
+
+- **SymPy**: An excellent module for solving complex math equations.
+- **Tkinter & TtkBootstrap**: For the user interface.
+
+## To-Do for Next Level
+
+- Solving two unknown variables.
+- Adding NumPy for matrices and complex expressions.
+
+### Completed To-Dos
+
+- Displaying both values when there are two solutions.
+- Handling float values.
